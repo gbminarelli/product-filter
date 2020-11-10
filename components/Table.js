@@ -1,0 +1,18 @@
+// import { TableBody } from "./TableBody.js";
+
+// const e = React.createElement;
+
+const Table = (props) => {
+  return e(
+    "table",
+    null,
+    e(
+      "thead",
+      null,
+      e("tr", null, e("th", null, "Name"), e("th", null, "Price"))
+    ),
+    e(TableBody, { tableData: props.tableData })
+  );
+};
+
+// export { Table };

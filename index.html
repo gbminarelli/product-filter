@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Load React -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- Load React Components -->
+    <!-- Ideally the files below would be modules served on demand by a dedicated server and not just loaded at the same
+      time like what’s happening here. I just don’t want to set up a local server (no matter how simple) for such a
+      small project. That being said, I’ve added a few comments on each of the files referenced below, containing the
+      expected import/export directives (and other smaller changes) if those files were indeed modules. If that was the
+      case, I’d also add the type = ‘module’ attribute to the element referencing index.js and change each file
+      extension below to .mjs. -->
+    <script src="./components/TableBody.js"></script>
+    <script src="./components/Table.js"></script>
+    <script src="./components/Checkbox.js"></script>
+    <script src="./components/Search.js"></script>
+    <script src="./components/App.js"></script>
+    <!-- Load Custom Script -->
+    <script src="./index.js"></script>
+  </body>
+</html>
