@@ -1,5 +1,3 @@
-// const e = React.createElement;
-
 const Search = (props) => {
   const handleChange = (event) => {
     props.handleChange(event.target.value);
@@ -9,9 +7,7 @@ const Search = (props) => {
     type: "text",
     value: props.value,
     onChange: handleChange,
-    // onChange: (event) => handleChange(event, props),
     placeholder: "Search...",
+    id: "search",
   });
 };
-
-// export { Search };

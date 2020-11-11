@@ -1,5 +1,3 @@
-// const e = React.createElement;
-
 const getTableSections = (data) => {
   const sectionsArray = [];
   for (const [key, value] of Object.entries(data)) {
@@ -22,8 +20,22 @@ const getTableSections = (data) => {
   return sectionsArray;
 };
 
-const TableBody = (props) => {
-  return e("tbody", null, ...getTableSections(props.tableData));
+const noResults = (data) => {
+  for (const [key, value] of Object.entries(data)) {
+    if (value.length) {
+      return false;
+    }
+  }
+  return true;
 };
 
-// export { TableBody };
+const TableBody = (props) => {
+  return e(
+    "tbody",
+    null,
+    noResults(props.tableData)
+      ? e("tr", null, e("td", { colSpan: 2, id: "no-results" }, "No results"))
+      : null,
+    ...getTableSections(props.tableData)
+  );
+};

@@ -1,7 +1,68 @@
-#checkbox {
+body {
   margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: #131313;
+}
+
+/* Root */
+
+#root > div {
+  display: inline-block;
+}
+
+#root {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Form */
+
+#checkbox,
+#search {
+  margin: 0.5rem;
+}
+
+#search {
+  border-radius: 25px;
+  border: 1px solid #ececec;
+  padding: 0.5rem 1rem;
+}
+
+/* Table */
+
+table {
+  margin: 2rem auto;
+  table-layout: fixed;
+  width: 100%;
+  max-width: 500px;
+}
+
+th {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 1px solid #131313;
+  text-align: center;
 }
 
 .not-stocked {
-  color: hotpink;
+  color: #b50717;
+}
+
+tbody th {
+  background-color: #ececec;
+}
+
+#no-results {
+  border: none;
+  padding-top: 4rem;
+  color: #131313;
 }

@@ -1,5 +1,3 @@
-// const e = React.createElement;
-
 const Checkbox = (props) => {
   const handleChange = (event) => {
     props.handleChange(event.target.value);
@@ -17,5 +15,3 @@ const Checkbox = (props) => {
     e("label", { htmlFor: "checkbox" }, "Only show products in stock")
   );
 };
-
-// export { Checkbox };

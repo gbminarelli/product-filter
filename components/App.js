@@ -1,9 +1,3 @@
-// import { Table } from "./Table.js";
-// import { Checkbox } from "./Checkbox.js";
-// import { Search } from "./Search.js";
-
-// const e = React.createElement;
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -67,5 +61,3 @@ class App extends React.Component {
     );
   }
 }
-
-// export { App };

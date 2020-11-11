@@ -8,43 +8,45 @@ would depend on the size of the project and its requirements. */
 
 const e = React.createElement;
 
-// DATA PROCESSING
-
-const rawData = [
-  {
-    category: "Sporting Goods",
-    price: "$49.99",
-    stocked: true,
-    name: "Football",
-  },
-  {
-    category: "Sporting Goods",
-    price: "$9.99",
-    stocked: true,
-    name: "Baseball",
-  },
-  {
-    category: "Sporting Goods",
-    price: "$29.99",
-    stocked: false,
-    name: "Basketball",
-  },
-  {
-    category: "Electronics",
-    price: "$99.99",
-    stocked: true,
-    name: "iPod Touch",
-  },
-  {
-    category: "Electronics",
-    price: "$399.99",
-    stocked: false,
-    name: "iPhone 5",
-  },
-  { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" },
-];
-
-const computedData = {};
+const computedData = {},
+  rawData = [
+    {
+      category: "Sporting Goods",
+      price: "$49.99",
+      stocked: true,
+      name: "Football",
+    },
+    {
+      category: "Sporting Goods",
+      price: "$9.99",
+      stocked: true,
+      name: "Baseball",
+    },
+    {
+      category: "Sporting Goods",
+      price: "$29.99",
+      stocked: false,
+      name: "Basketball",
+    },
+    {
+      category: "Electronics",
+      price: "$99.99",
+      stocked: true,
+      name: "iPod Touch",
+    },
+    {
+      category: "Electronics",
+      price: "$399.99",
+      stocked: false,
+      name: "iPhone 5",
+    },
+    {
+      category: "Electronics",
+      price: "$199.99",
+      stocked: true,
+      name: "Nexus 7",
+    },
+  ];
 
 for (const record of rawData) {
   if (computedData[record.category]) {
@@ -63,11 +65,6 @@ for (const record of rawData) {
     ];
   }
 }
-
-// console.log(rawData);
-// console.log(computedData);
-
-// RENDERING APP COMPONENT
 
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(e(App, null), document.getElementById("root"));
