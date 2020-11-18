@@ -2,6 +2,10 @@
 
 A single-page and JSX-free React application based on the searchable product data table project described in https://reactjs.org/docs/thinking-in-react.html.
 
+<p align="center">
+  <img src="https://media.giphy.com/media/qgXiIfQzu1d7CktBYG/giphy.gif" alt="demo" />
+</p>
+
 ## Getting Started
 
 ### Dependencies
@@ -12,7 +16,7 @@ Both libraries are automatically imported via CDN.
 
 ### Installing
 
-There is no installation process.
+No installation required.
 
 ### Executing
 
